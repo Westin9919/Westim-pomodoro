@@ -1,0 +1,85 @@
+# Westim Pomodoro
+
+Aplicativo Pomodoro desenvolvido em React e TypeScript, utilizando Vite como bundler.  
+O projeto utiliza React Context e useReducer para gerenciamento de estado.
+
+---
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado:
+
+- [Node.js](https://nodejs.org/) (versão 18 ou superior recomendada)  
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+
+---
+
+## Instalação
+
+1. Clone o repositório:
+
+```bash
+git clone <URL_DO_REPOSITORIO>
+
+2. cd Westim-pomodoro
+
+3. npm install
+# ou
+yarn install
+
+4. npm run dev
+# ou
+yarn dev
+
+Build para Produção
+
+Para gerar uma versão otimizada para produção:
+npm run build
+# ou
+yarn build
+
+Estrutura do Projeto
+src/
+ ├─ components/       # Componentes React reutilizáveis
+ ├─ contexts/         # Contextos para gerenciamento de estado
+ ├─ hooks/            # Hooks customizados
+ ├─ pages/            # Páginas principais
+ ├─ styles/           # Arquivos de estilo CSS/SCSS
+ └─ main.tsx          # Entrada principal da aplicação
+
+Observações Técnicas
+
+Arquivos JSX/TSX
+
+Todos os arquivos contendo JSX devem ter a extensão .tsx.
+
+Arquivos .ts não devem conter JSX.
+
+Imports
+
+Os imports devem corresponder exatamente ao nome e caminho dos arquivos.
+
+Exemplo correto:
+import { initialTaskState } from './initialTaskState';
+React Context
+
+O TaskContextProvider deve encapsular todos os componentes que necessitam acessar o estado global:
+<TaskContext.Provider value={{ state, dispatch }}>
+  {children}
+</TaskContext.Provider>
+Vite + SWC
+
+O projeto utiliza o plugin @vitejs/plugin-react-swc para transpilar JSX e TypeScript.
+
+Caso ocorram erros de compilação, verifique se as extensões dos arquivos e os imports estão corretos.
+
+Referências
+
+React Documentation
+
+Vite Documentation
+
+React Context API
+Autor
+
+Desenvolvido por Vinicius Westim como parte das atividades acadêmicas.
