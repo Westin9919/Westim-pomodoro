@@ -7,7 +7,7 @@ import { MainTemplate } from '../../templates/MainTemplate';
 
 export function AboutPomodoro() {
   useEffect(() => {
-    document.title = 'Entenda a Técnica Pomodoro - Westim Pomodoro';
+    document.title = 'Entenda a Técnica Pomodoro - Chronos Pomodoro';
   }, []);
 
   return (

@@ -40,7 +40,7 @@ export function History() {
   }, [state.tasks]);
 
   useEffect(() => {
-    document.title = 'Histórico - Westim Pomodoro';
+    document.title = 'Histórico - Chronos Pomodoro';
   }, []);
 
   useEffect(() => {

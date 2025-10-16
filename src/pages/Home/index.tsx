@@ -6,7 +6,7 @@ import { MainTemplate } from '../../templates/MainTemplate';
 
 export function Home() {
   useEffect(() => {
-    document.title = 'Westim Pomodoro';
+    document.title = 'Chronos Pomodoro';
   }, []);
 
   return (
